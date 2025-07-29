@@ -1,33 +1,6 @@
 /* место для вашего кода */
 
-header {
-    display: grid;
-    grid-template-columns: 1fr 148px 1fr;
-    height: 293px;
-    place-content: center;
-}
-
-ul {
-    display: inline-flex;
-}
-
-.logo {
-    width: 148px;
-    height: 105px;
-}
-
-address {
-    justify-items: end;
-}
-
-.cover {
-    position: relative;
-    min-height: 757px;
-    background-color: rgb(0 0 0/0.6);
-    display: flex;
-    flex-direction: column;
-}
-
+/*fonts*/
 h1 {
     position: relative;
     font-size: 100px;
@@ -38,19 +11,97 @@ h1 {
     flex-grow: 1;
 }
 
-.background {
-    position: absolute;
-    z-index: -1;
-    height: 757px;
+h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    padding: 27px;
+}
 
+p {
+    font-size: 20px;
+    line-height: 120%;
+}
+
+a {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.caption {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.underline {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.a_main {
+    font-size: 20px;
+    padding: 27px;
+    display: block;
+}
+/*end fonts*/
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 148px 1fr;
+    height: 293px;
+    place-content: center;
+    padding: 50px;
+}
+
+ul {
+    display: inline-flex;
+    align-items: center;
+}
+
+
+
+.logo {
+    width: 148px;
+    height: 105px;
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    text-decoration: none;
+}
+
+.cover {
+    position: relative;
+    min-height: 757px;
+    background-color: rgb(0 0 0/0.6);
+    display: flex;
+    flex-direction: column;
 }
 
 .description {
-    color: white;
-    text-transform: uppercase;
     display: flex;
     justify-content: space-between;
-    font-size: 22px;
+}
+
+.background {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+}
+
+.text_block {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 1;
+    padding: 50px 40px;
 }
 
 button {
@@ -64,13 +115,7 @@ button {
 
 
 .lots {
-    position: relative;
-}
-
-
-h2 {
-    text-transform: uppercase;
-    font-size: 40px;
+    margin-top: 180px;
 }
 
 .lot_items {
@@ -90,17 +135,3 @@ h2 {
     position: relative;
 }
 
-p {
-    font-size: 20px;
-}
-
-.caption {
-    font-size: 22px;
-    text-decoration: underline;
-    text-transform: uppercase;
-}
-
-.card_lot_img{
-    position: absolute;
-    z-index: -1;
-}
