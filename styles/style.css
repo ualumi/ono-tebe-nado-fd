@@ -1,1 +1,106 @@
 /* место для вашего кода */
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 148px 1fr;
+    height: 293px;
+    place-content: center;
+}
+
+ul {
+    display: inline-flex;
+}
+
+.logo {
+    width: 148px;
+    height: 105px;
+}
+
+address {
+    justify-items: end;
+}
+
+.cover {
+    position: relative;
+    min-height: 757px;
+    background-color: rgb(0 0 0/0.6);
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    position: relative;
+    font-size: 100px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 30%;
+    text-transform: uppercase;
+    flex-grow: 1;
+}
+
+.background {
+    position: absolute;
+    z-index: -1;
+    height: 757px;
+
+}
+
+.description {
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+}
+
+button {
+    border: 1px solid;
+    border-radius: 0;
+    background: none;
+    color: white;
+    border-color: white;
+    text-transform: uppercase;
+}
+
+
+.lots {
+    position: relative;
+}
+
+
+h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.lot_items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 596px;
+    /*padding: 40px;*/
+    background-color: rgb(0 0 0/0.6);
+    color: white;
+    position: relative;
+}
+
+p {
+    font-size: 20px;
+}
+
+.caption {
+    font-size: 22px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.card_lot_img{
+    position: absolute;
+    z-index: -1;
+}
