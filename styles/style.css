@@ -5,15 +5,12 @@ h1 {
     position: relative;
     font-size: 100px;
     color: white;
-    font-weight: 700;
     letter-spacing: 30%;
-    text-transform: uppercase;
     flex-grow: 1;
     word-spacing: 1000px;
 }
 
 h2 {
-    text-transform: uppercase;
     font-size: 40px;
     padding: 27px;
 }
@@ -25,17 +22,22 @@ p {
 
 a {
     font-size: 18px;
-    text-decoration: underline;
+}
+
+.bald {
+    font-weight: 700;
 }
 
 .caption {
     font-size: 22px;
-    text-transform: uppercase;
 }
 
 .underline {
     text-decoration: underline;
-    font-weight: 700;
+}
+
+.uppercased {
+    text-transform: uppercase;
 }
 
 .a_main {
@@ -50,6 +52,12 @@ a {
 }
 /*end fonts*/
 
+
+/*basic*/
+ul {
+    list-style-type: circle;
+}
+/*end basic*/
 header {
     display: grid;
     grid-template-columns: 1fr 148px 1fr;
@@ -58,12 +66,16 @@ header {
     padding: 50px;
 }
 
-ul {
-    display: inline-flex;
+nav {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-
+.row {
+    display: flex;
+    flex-direction: row;
+}
 
 .logo {
     width: 148px;
@@ -71,11 +83,12 @@ ul {
 }
 
 address {
+    text-decoration: none;
+    font-style: normal;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
-    text-decoration: none;
+    word-wrap: break-word;
 }
 
 .cover {
@@ -103,8 +116,6 @@ address {
 
 .text_block {
     color: white;
-    display: flex;
-    justify-content: space-between;
     flex-direction: column;
     flex: 1;
     padding: 50px 40px;
@@ -132,9 +143,7 @@ button {
 }
 
 .item {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 596px;
     /*padding: 40px;*/
     background-color: rgb(0 0 0/0.6);
@@ -158,18 +167,21 @@ button {
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
     align-items: start;
     height: 180px;
 
 }
 
 .networks {
+    display: flex;
     gap: 48px;
 }
 
 .network {
     height: 48px;
     width: 48px;
+}
+
+.unstyled {
+    list-style-type: none;
 }

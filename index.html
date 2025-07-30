@@ -10,15 +10,18 @@
   </head>
   <body>
     <header>
-      <ul>
-        <li><a>главная</a></li>
-        <li><a>посмотреть лоты</a></li>
-        <li><a>об аукционе</a></li>
-      </ul>
+      <nav>
+        <ul class="row">
+          <li><a>главная</a></li>
+          <li><a class="underline">посмотреть лоты</a></li>
+          <li><a class="underline">об аукционе</a></li>
+        </ul>
+      </nav>
+      
       <a><img class="logo" src="images/logo-black.svg"></a>
-      <address>
-        <a>+9 999 555 5555</a>
-        <a>info@sobaka.ge</a>
+      <address >
+        <a class="underline">+9 999 555 5555</a>
+        <a class="underline">info@sobaka.ge</a>
         наб. Принсенграхт 263- 265, Амстердам
 
       </address>
@@ -26,10 +29,10 @@
     <main>
       <section class="cover">
         
-        <div class="text_block">
-          <h1>оно тебе надо</h1>
+        <div class="text_block description">
+          <h1 class="bald uppercased">оно тебе надо</h1>
           <div class="description">
-            <p class="caption" id="description_caption">Аукцион вещей, в которые никто не верил</p>
+            <p class="caption uppercased" id="description_caption">Аукцион вещей, в которые никто не верил</p>
             <button><a>Сделать ставку</a></button>
           </div>
         </div>
@@ -37,12 +40,12 @@
       </section>
 
       <section class="lots">
-        <h2>Лоты</h2>
+        <h2 class="uppercased">Лоты</h2>
         <div class="lot_items">
           <!--первый лот-->
-          <div class="item">
-            <div class="text_block">
-              <p class="caption underline">
+          <div class="item description">
+            <div class="text_block description">
+              <p class="caption underline bald uppercased">
                 Фильм режиссёра, который бросил киношколу
               </p>
               <p>
@@ -52,9 +55,9 @@
             <img class="background" src="/images/card-lot-01.jpg">
           </div>
           <!--второй лот-->
-          <div class="item">
-            <div class="text_block">
-              <p class="caption underline">
+          <div class="item description">
+            <div class="text_block description">
+              <p class="caption underline uppercased bald">
                 Книга, где описан один скучный день из жизни рекламного агента
               </p>
               <p>
@@ -64,9 +67,9 @@
             <img class="background" src="/images/card-lot-02.jpg">
           </div>
           <!--третий лот-->
-          <div class="item">
-            <div class="text_block">
-              <p class="caption underline">
+          <div class="item description">
+            <div class="text_block description">
+              <p class="caption underline uppercased bald">
                 Картина, которую повторит даже 5-летний сын маминой подруги
               </p>
               <p>
@@ -76,14 +79,14 @@
             <img class="background" src="/images/card-lot-03.jpg">
           </div>
         </div>
-        <a class="a_main">посмотреть больше</a>
+        <a class="a_main underline">посмотреть больше</a>
       </section>
       <section class="about">
         <div class="side_picture">
           <img class="logo" src="/images/logo-white.svg">
         </div>
         <div>
-          <h2>Об аукционе</h2>
+          <h2 class="uppercased">Об аукционе</h2>
           <p>
             Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
           </p>
@@ -94,17 +97,17 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="description">
       <address>
-        <a>+9 999 555 5555</a>
-        <a>info@sobaka.ge</a>
+        <a class="underline">+9 999 555 5555</a>
+        <a class="underline">info@sobaka.ge</a>
         наб. Принсенграхт 263- 265, Амстердам
       </address>
       <nav>
-        <ul>
-          <li><a>главная</a></li>
-          <li><a>посмотреть лоты</a></li>
-          <li><a>об аукционе</a></li>
+        <ul class="unstyled">
+          <li><a class="underline">главная</a></li>
+          <li><a class="underline">посмотреть лоты</a></li>
+          <li><a class="underline">об аукционе</a></li>
         </ul>
       </nav>
       <div class="networks">
