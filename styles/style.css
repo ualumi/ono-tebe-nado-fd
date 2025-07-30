@@ -217,6 +217,9 @@ button {
 
 article {
     grid-area: article;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 footer {
@@ -237,4 +240,5 @@ footer {
 
 .unstyled {
     list-style-type: none;
+    text-align: center;
 }
