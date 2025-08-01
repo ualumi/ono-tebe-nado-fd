@@ -5,32 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
+    <!--хедер-->
     <header >
       <nav class="description center_align ">
-        <ul class="row gap">
-          <li class="margin"><a>главная</a></li>
-          <li><a class="underline margin">посмотреть лоты</a></li>
+        <ul class="menu">
+          <li class="menu_item" id="first"><a>главная</a></li>
+          <li><a class="underline menu_item">посмотреть лоты</a></li>
           <li><a class="underline">об аукционе</a></li>
         </ul>
       </nav>
-      
       <a><img class="logo" src="images/logo-black.svg"></a>
       <address class="address_header">
-        <a class="underline">+9 999 555 5555</a>
-        <a class="underline">info@sobaka.ge</a>
+        <a class="underline" href="#">+9 999 555 5555</a>
+        <a class="underline" href="#">info@sobaka.ge</a>
         <a>наб. Принсенграхт 263- 265, Амстердам</a>
-
       </address>
     </header>
     <main>
+      <!--обложка секция-->
       <section class="cover">
-        
-        <div class="text_block description">
-          <div class="grid_text">
+        <div class="text description">
+          <div class="title_cover">
             <h1 class="bald uppercased start">оно</h1>
             <h1 class="bald uppercased center">тебе</h1>
             <h1 class="bald uppercased end">надо</h1>
@@ -42,13 +42,13 @@
         </div>
         <img class="background" src="images/cover.jpg">
       </section>
-
+      <!--лоты секция-->
       <section class="lots">
         <h2 class="uppercased title">Лоты</h2>
         <div class="lot_items">
           <!--первый лот-->
           <div class="item description">
-            <div class="text_block description">
+            <div class="text description">
               <p class="caption underline bald uppercased">
                 Фильм режиссёра, который бросил киношколу
               </p>
@@ -60,7 +60,7 @@
           </div>
           <!--второй лот-->
           <div class="item description">
-            <div class="text_block description">
+            <div class="text description">
               <p class="caption underline uppercased bald">
                 Книга, где описан один скучный день из жизни рекламного агента
               </p>
@@ -72,7 +72,7 @@
           </div>
           <!--третий лот-->
           <div class="item description">
-            <div class="text_block description">
+            <div class="text description">
               <p class="caption underline uppercased bald">
                 Картина, которую повторит даже 5-летний сын маминой подруги
               </p>
@@ -85,9 +85,10 @@
         </div>
         <a class="a_main underline">посмотреть больше</a>
       </section>
+      <!--про что секция-->
       <section class="about">
         <div class="logo_column">
-          <img class="logo" src="/images/logo-white.svg">
+          <img class="logo_about" src="/images/logo-white.svg">
         </div>
         <h2 class="uppercased center_align">Об аукционе</h2>
         <article>
@@ -101,10 +102,11 @@
         </article>
       </section>
     </main>
+    <!--футер-->
     <footer class="description">
       <address>
-        <a class="underline">+9 999 555 5555</a>
-        <a class="underline">info@sobaka.ge</a>
+        <a class="underline" href="#">+9 999 555 5555</a>
+        <a class="underline" href="#">info@sobaka.ge</a>
         <a>наб. Принсенграхт 263- 265, Амстердам</a>
       </address>
       <nav>

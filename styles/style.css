@@ -15,8 +15,7 @@ h2 {
 }
 
 .title{
-    padding: 27px;
-    padding-top: 0px;
+    padding: 0px 37px 28px 37px;
 }
 
 p {
@@ -46,7 +45,7 @@ a {
 
 .a_main {
     font-size: 20px;
-    padding: 27px;
+    padding: 32px 0px 27px 37px;
     display: block;
 }
 
@@ -56,8 +55,6 @@ a {
 }
 /*end fonts*/
 
-
-/*basic*/
 ul {
     list-style-type: circle;
 }
@@ -73,12 +70,14 @@ ul {
 
 .center {
     align-self: center;
+    margin-left: 39px;
 }
 
 .end {
     align-self: flex-end;
+    margin-left: 39px;
 }
-/*end basic*/
+
 header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
@@ -88,22 +87,28 @@ header {
 }
 
 
-.gap {
-    gap: 13px;
-}
-
-.margin{
+.menu_item{
     margin-right: 15px;
 }
 
-.row {
+.menu {
     display: flex;
     flex-direction: row;
+    gap: 15px;
+}
+
+#first {
+    list-style-type: none;
 }
 
 .logo {
     width: 148px;
     height: 105px;
+}
+
+.logo_about {
+    width: 148px;
+    height: 114px;
 }
 
 address {
@@ -114,10 +119,11 @@ address {
     justify-content: center;
     word-wrap: break-word;
     gap: 1px;
+    width: 240px;
 }
 
 .address_header {
-    width: 240px;
+    
     justify-self: end;
 }
 
@@ -129,15 +135,13 @@ address {
     flex-direction: column;
 }
 
-.grid_text{
+.title_cover{
     display: flex;
     gap: 20px;
     align-items: center;
     flex-direction: column;
     flex-grow: 1;
     justify-content: center;
-    
-    /*flex: 1;*/
 }
 
 .description {
@@ -155,7 +159,7 @@ address {
     max-width: 100%;
 }
 
-.text_block {
+.text {
     color: white;
     flex-direction: column;
     flex: 1;
@@ -174,9 +178,7 @@ button {
 
 
 .lots {
-    
-    margin: 0px 24px;
-    margin-top: 180px;
+    margin: 180px 24px 0px 24px;
 }
 
 .lot_items {
@@ -188,7 +190,6 @@ button {
 .item {
     flex-direction: column;
     height: 596px;
-    /*padding: 40px;*/
     background-color: rgb(0 0 0/0.6);
     color: white;
     position: relative;
@@ -201,6 +202,8 @@ button {
     grid-template-rows: min-content 1fr;
     margin-bottom: 180px;
     grid-template-areas: "logo h2" ". article";
+    gap: 10px;
+    padding: 5px 25px 0px 25px;
 }
 
 .logo_column {
@@ -225,6 +228,7 @@ article {
 footer {
     align-items: start;
     height: 180px;
+    padding: 0px 50px;
 
 }
 
