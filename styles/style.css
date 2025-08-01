@@ -5,9 +5,10 @@ h1 {
     position: relative;
     font-size: 100px;
     color: white;
-    letter-spacing: 39px;
+    letter-spacing: 33px;
     line-height: 115%;
     display: block;
+    margin-top: -15px;
 }
 
 h2 {
@@ -50,8 +51,9 @@ a {
 }
 
 #description_caption {
-    word-spacing: 30px;
+    word-spacing: 20px;
     align-self: center;
+    padding-left: 10px;
 }
 /*end fonts*/
 
@@ -65,17 +67,25 @@ ul {
 }
 
 .start {
-    align-self: flex-start;
+    position: absolute;
+    top: 187px;
+    left: 50px;
+    
 }
 
 .center {
-    align-self: center;
-    margin-left: 39px;
+    position: absolute;
+    top: 322px;
+    margin-left: 20px;
+
 }
 
 .end {
-    align-self: flex-end;
-    margin-left: 39px;
+    position: absolute;
+    top: 460px;
+    left: 670px;
+    margin-left: -6px;
+
 }
 
 header {
@@ -85,7 +95,6 @@ header {
     place-content: center;
     padding: 50px;
 }
-
 
 .menu_item{
     margin-right: 15px;
@@ -118,12 +127,11 @@ address {
     flex-direction: column;
     justify-content: center;
     word-wrap: break-word;
-    gap: 1px;
-    width: 240px;
+    gap: 2px;
+    width: 235px;
 }
 
 .address_header {
-    
     justify-self: end;
 }
 
@@ -137,7 +145,6 @@ address {
 
 .title_cover{
     display: flex;
-    gap: 20px;
     align-items: center;
     flex-direction: column;
     flex-grow: 1;
@@ -174,6 +181,8 @@ button {
     border-color: white;
     text-transform: uppercase;
     padding: 12px 32px;
+    font-size: 22px;
+    line-height: 120%;
 }
 
 
@@ -206,6 +215,10 @@ button {
     padding: 5px 25px 0px 25px;
 }
 
+#about {
+    margin-top: 10px;
+}
+
 .logo_column {
     grid-area: logo;
     border-radius: 50%;
@@ -216,6 +229,7 @@ button {
     justify-content: center;
     align-items: center;
     justify-self: center;
+    margin-left: -9px;
 }
 
 article {
