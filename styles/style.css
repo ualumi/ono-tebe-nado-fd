@@ -1,7 +1,7 @@
 /* место для вашего кода */
 
 /*fonts*/
-h1 {
+.head_text {
     position: relative;
     font-size: 100px;
     color: white;
@@ -11,7 +11,7 @@ h1 {
     margin-top: -15px;
 }
 
-h2 {
+.head_smaller_text {
     font-size: 40px;
 }
 
@@ -19,7 +19,7 @@ h2 {
     padding: 0px 37px 28px 37px;
 }
 
-p {
+.paragraph {
     font-size: 20px;
     line-height: 120%;
 }
@@ -106,8 +106,9 @@ header {
     gap: 15px;
 }
 
-#first {
+.link-active {
     list-style-type: none;
+    text-decoration: none;
 }
 
 .logo {
