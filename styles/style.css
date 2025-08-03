@@ -5,7 +5,7 @@
     position: relative;
     font-size: 100px;
     color: white;
-    letter-spacing: 33px;
+    letter-spacing: 32px;
     line-height: 115%;
     display: block;
     margin-top: -15px;
@@ -50,50 +50,24 @@ a {
     display: block;
 }
 
-#description_caption {
+.description_caption {
     word-spacing: 20px;
     align-self: center;
     padding-left: 10px;
 }
 /*end fonts*/
 
-ul {
-    
-}
-
 .center_align {
     display: flex;
     align-items: center;
 }
 
-.start {
-    position: absolute;
-    top: 187px;
-    left: 50px;
-    
-}
-
-.center {
-    position: absolute;
-    top: 322px;
-    margin-left: 20px;
-
-}
-
-.end {
-    position: absolute;
-    top: 460px;
-    left: 670px;
-    margin-left: -6px;
-
-}
-
 header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
-    height: 293px;
+    /*height: 293px;*/
     place-content: center;
-    padding: 50px;
+    padding: 92px 50px;
 }
 
 .menu_item{
@@ -122,15 +96,17 @@ header {
     height: 114px;
 }
 
-address {
+.address {
     text-decoration: none;
     font-style: normal;
     display: flex;
     flex-direction: column;
     justify-content: center;
     word-wrap: break-word;
-    gap: 2px;
+    gap: 5px;
     width: 235px;
+    padding-bottom: 1px;
+    padding-right: 1px;
 }
 
 .address_header {
@@ -140,9 +116,14 @@ address {
 .cover {
     position: relative;
     min-height: 757px;
-    background-color: rgb(0 0 0/0.6);
     display: flex;
     flex-direction: column;
+    background: url("../images/cover.jpg");
+    background-size: cover;
+}
+
+.background1 {
+    background-color: rgb(0 0 0/0.6);
 }
 
 .title_cover{
@@ -151,6 +132,26 @@ address {
     flex-direction: column;
     flex-grow: 1;
     justify-content: center;
+    gap: 50px;
+    /*padding: 10px 10px;*/
+}
+
+.start {
+    align-self: flex-start;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.center {
+    align-self: center;
+    padding-left: 35px;
+    margin-top: -30px;
+}
+
+.end {
+    align-self: flex-end;
+    margin-right: -25px;
+    margin-top: -25px;
 }
 
 .description {
@@ -175,7 +176,7 @@ address {
     padding: 50px 40px;
 }
 
-button {
+.button {
     border: 1px solid;
     border-radius: 0;
     background: none;
@@ -185,6 +186,7 @@ button {
     padding: 12px 32px;
     font-size: 22px;
     line-height: 120%;
+    margin-right: 10px;
 }
 
 
@@ -200,7 +202,7 @@ button {
 
 .item {
     flex-direction: column;
-    height: 596px;
+    min-height: 596px;
     background-color: rgb(0 0 0/0.6);
     color: white;
     position: relative;
@@ -239,7 +241,7 @@ button {
     padding: 5px 25px 0px 25px;
 }
 
-#about {
+.about_h2 {
     margin-top: 10px;
 }
 
@@ -263,11 +265,11 @@ button {
     gap: 24px;
 }
 
-footer {
+.footer {
     align-items: start;
-    height: 180px;
+    /*height: 180px;*/
     padding: 0px 50px;
-
+    margin-bottom: 92px;
 }
 
 .networks {
