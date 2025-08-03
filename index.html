@@ -30,11 +30,11 @@
       <!--обложка секция-->
       <section class="cover">
         <div class="text description">
-          <div class="title_cover">
-            <h1 class="head_text bald uppercased start">оно</h1>
-            <h1 class="head_text bald uppercased center">тебе</h1>
-            <h1 class="head_text bald uppercased end">надо</h1>
-          </div>
+          <h1 class="title_cover">
+            <span class="head_text bald uppercased start">оно</span>
+            <span class="head_text bald uppercased center">тебе</span>
+            <span class="head_text bald uppercased end">надо</span>
+          </h1>
           <div class="description">
             <p class="caption uppercased paragraph" id="description_caption">Аукцион вещей, в которые никто не верил</p>
             <button>Сделать ставку</button>
@@ -45,44 +45,48 @@
       <!--лоты секция-->
       <section class="lots">
         <h2 class="head_smaller_text uppercased title">Лоты</h2>
-        <div class="lot_items">
+        <ul class="lot_items">
           <!--первый лот-->
-          <div class="item description">
-            <div class="text description">
-              <p class="paragraph caption underline bald uppercased">
-                Фильм режиссёра, который бросил киношколу
-              </p>
-              <p class="paragraph">
-                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-              </p>
-            </div>
-            <img class="background" src="images/card-lot-01.jpg" alt="Кадр из фильма «Лакричная пицца»">
-          </div>
+          <li class="unstyled_li">
+            <a class="description first_lot item">
+              <article class="text description cover_lot">
+                <h3 class="paragraph caption underline bald uppercased">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
+                <p class="paragraph">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+                </p>
+              </article>
+            </a>
+            <!--<img class="background" src="images/card-lot-01.jpg" alt="Кадр из фильма «Лакричная пицца»">-->
+          </li>
           <!--второй лот-->
-          <div class="item description">
-            <div class="text description">
-              <p class="paragraph caption underline uppercased bald">
-                Книга, где описан один скучный день из жизни рекламного агента
-              </p>
-              <p class="paragraph">
-                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
-              </p>
-            </div>
-            <img class="background" src="images/card-lot-02.jpg" alt="Книга «Иностранка», Улисс Джойс Джеймс">
-          </div>
+          <li class="unstyled_li">
+            <a class="item description second_lot">
+              <article class="text description cover_lot">
+                <h3 class="paragraph caption underline uppercased bald">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h3>
+                <p class="paragraph">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+                </p>
+              </article>
+            </a>
+          </li>
           <!--третий лот-->
-          <div class="item description">
-            <div class="text description">
-              <p class="paragraph caption underline uppercased bald">
-                Картина, которую повторит даже 5-летний сын маминой подруги
-              </p>
-              <p class="paragraph">
-                Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?
-              </p>
-            </div>
-            <img class="background" src="images/card-lot-03.jpg" alt="Картина, автор: Кандинский Василий Васильевич">
-          </div>
-        </div>
+          <li class="unstyled_li">
+            <a class="item description third_lot">
+              <article class="text description cover_lot">
+                <h3 class="paragraph caption underline uppercased bald">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h3>
+                <p class="paragraph">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?
+                </p>
+              </article>
+            </a>
+          </li>
+        </ul>
         <a class="a_main underline">посмотреть больше</a>
       </section>
       <!--про что секция-->
@@ -91,7 +95,7 @@
           <img class="logo_about" src="images/logo-white.svg" alt="Логотип">
         </div>
         <h2 class="head_smaller_text uppercased center_align" id="about">Об аукционе</h2>
-        <article>
+        <div class="article">
           <p class="paragraph">
             Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
           </p>
@@ -99,7 +103,7 @@
             Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
   на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. 
           </p>
-        </article>
+        </div>
       </section>
     </main>
     <!--футер-->
@@ -111,16 +115,16 @@
       </address>
       <nav>
         <ul class="unstyled">
-          <li><a class="underline">главная</a></li>
-          <li><a class="underline">посмотреть лоты</a></li>
-          <li><a class="underline">об аукционе</a></li>
+          <li class="unstyled_li"><a class="underline link-active">главная</a></li>
+          <li class="unstyled_li"><a class="underline">посмотреть лоты</a></li>
+          <li class="unstyled_li"><a class="underline">об аукционе</a></li>
         </ul>
       </nav>
-      <div class="networks">
-        <img class="network" src="images/yt.svg" alt="Youtube">
-        <img class="network" src="images/vk.svg" alt="Вконтакте">
-        <img class="network" src="images/pinterest.svg" alt="Pinterest">
-      </div>
+      <ul class="networks unstyled">
+        <li class="unstyled_li"><a href="#"><img class="network" src="images/yt.svg" alt="Youtube"></a></li>
+        <li class="unstyled_li"><a href="#"><img class="network" src="images/vk.svg" alt="Вконтакте"></a></li>
+        <li class="unstyled_li"><a href="#"><img class="network" src="images/pinterest.svg" alt="Pinterest"></a></li>
+      </ul>
     </footer>
   </body>
 </html>

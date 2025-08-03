@@ -58,7 +58,7 @@ a {
 /*end fonts*/
 
 ul {
-    list-style-type: circle;
+    
 }
 
 .center_align {
@@ -104,6 +104,7 @@ header {
     display: flex;
     flex-direction: row;
     gap: 15px;
+    list-style-type: circle;
 }
 
 .link-active {
@@ -205,6 +206,28 @@ button {
     position: relative;
 }
 
+.first_lot {
+    background: url("../images/card-lot-01.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.second_lot {
+    background: url("../images/card-lot-02.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.third_lot {
+    background: url("../images/card-lot-03.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.cover_lot {
+    background-color: rgb(0 0 0/0.6);
+}
+
 .about {
     margin-top: 120px;
     display: grid;
@@ -233,7 +256,7 @@ button {
     margin-left: -9px;
 }
 
-article {
+.article {
     grid-area: article;
     display: flex;
     flex-direction: column;
@@ -249,6 +272,7 @@ footer {
 
 .networks {
     display: flex;
+    flex-direction: row;
     gap: 48px;
 }
 
@@ -258,6 +282,9 @@ footer {
 }
 
 .unstyled {
-    list-style-type: none;
     text-align: center;
+}
+
+.unstyled_li {
+    list-style-type: none;
 }
